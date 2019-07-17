@@ -4,7 +4,7 @@ MAINTAINER Olexander Kutsenko <olexander.kutsenko@gmail.com>
 #install PHP
 RUN apt-get update
 RUN apt-get install -y nano nginx wget
-RUN apt-get install -y php5-fpm php5-mysql
+RUN apt-get install -y php5.6-fpm php5.6-mysql
 COPY configs/nginx/default /etc/nginx/sites-available/default
 
 #install Wordpress
